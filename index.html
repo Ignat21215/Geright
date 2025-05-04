@@ -17,6 +17,38 @@ i<!DOCTYPE html>
     <link href="https://fonts.cdnfonts.com/css/bestermind" rel="stylesheet" />
   </head>
   <body>
+    <header class="header">
+      <div class="container header-container">
+        <a href="index.html" class="header-logo">
+          <p class="header-text">Gericht</p>
+        </a>
+        <ul class="header-list">
+          <li class="header-item">
+            <a href="index.html" class="header-link">Home</a>
+          </li>
+          <li class="header-item">
+            <a href="" class="header-link">Pages</a>
+          </li>
+          <li class="header-item">
+            <a href="" class="header-link">Contact Us</a>
+          </li>
+          <li class="header-item">
+            <a href="" class="header-link">Blog</a>
+          </li>
+          <li class="header-item">
+            <a href="" class="header-link">Landing</a>
+          </li>
+        </ul>
+        <ul class="header-roster">
+          <li class="header-element">
+            <a href="" class="header-reference">Login in / Registration</a>
+          </li>
+          <li class="header-element">
+            <a href="" class="header-reference">Book Table</a>
+          </li>
+        </ul>
+      </div>
+    </header>
     <main>
       <section class="hero">
         <div class="container">
@@ -46,26 +78,33 @@ i<!DOCTYPE html>
       </section>
       <section class="about">
         <div class="container">
-          <ul class="about-list">
-            <li class="about-item about-item-first">
-              <h2 class="about-item-title">About Us</h2>
-              <p class="about-item-desc">
+          <div class="about-box">
+            <div class="about-wrapper first-wrapper">
+              <h2 class="about-wrapper-title about-wrapper-title_first">
+                About Us
+              </h2>
+              <p class="about-wrapper-desc">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quis
                 pharetra adipiscing ultrices vulputate posuere tristique. In sed
                 odio nec aliquet eu proin mauris et.
               </p>
-              <button type="button" class="about-item-btn">Know More</button>
-            </li>
-            <li class="about-item">
-              <h2 class="about-item-title">Our History</h2>
-              <p class="about-item-desc">
+              <button type="button" class="about-wrapper-btn">Know More</button>
+            </div>
+            <img
+              src="./images/first-page/icons/knife.jpg"
+              alt="Knife"
+              class="about-img"
+            />
+            <div class="about-wrapper second-wrapper">
+              <h2 class="about-wrapper-title">Our History</h2>
+              <p class="about-wrapper-desc">
                 Adipiscing tempus ullamcorper lobortis odio tellus arcu
                 volutpat. Risus placerat morbi volutpat habitasse interdum mi
                 aliquam In sed odio nec aliquet.
               </p>
-              <button type="button" class="about-item-btn">Know More</button>
-            </li>
-          </ul>
+              <button type="button" class="about-wrapper-btn">Know More</button>
+            </div>
+          </div>
         </div>
       </section>
       <section class="table">
@@ -110,6 +149,225 @@ i<!DOCTYPE html>
             </select>
           </form>
           <button class="table-button">Book Now</button>
+        </div>
+      </section>
+      <section class="menu">
+        <div class="container">
+          <ul class="menu-list">
+            <li class="menu-item">
+              <a href="bar.html" class="menu-link"> Bar Menu </a>
+            </li>
+            <li class="menu-item">
+              <a href="#" class="menu-link"> Food Menu </a>
+            </li>
+            <li class="menu-item">
+              <a href="#" class="menu-link"> Desserts Menu </a>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="offers">
+        <div class="container offers-container">
+          <p class="offers-subtitle">Menu that fits you palatte</p>
+          <h2 class="offers-title">Today’s Special</h2>
+          <h3 class="offers-lead">Wine & Beer</h3>
+          <ul class="offers-list">
+            <li class="offers-item">
+              <h4 class="offers-list-subtitle">Chapel Hill Shiraz</h4>
+              <p class="offers-list-desc">AU | Bottle</p>
+              <p class="offers-list--price">$56</p>
+            </li>
+            <li class="offers-item">
+              <h4 class="offers-list-subtitle">Catena Malbec</h4>
+              <p class="offers-list-desc">AR | Bottle</p>
+              <p class="offers-list-price">$59</p>
+            </li>
+            <li class="offers-item">
+              <h4 class="offers-list-subtitle">La Vieille Rosé</h4>
+              <p class="offers-list-desc">FR | 750 ml</p>
+              <p class="offers-list-price">$31</p>
+            </li>
+            <li class="offers-item">
+              <h4 class="offers-list-subtitle">Rhino Pale Ale</h4>
+              <p class="offers-list-desc">CA | 750 ml</p>
+              <p class="offers-list-price">$31</p>
+            </li>
+            <li class="offers-item">
+              <h4 class="offers-list-subtitle">Irish Guinness</h4>
+              <p class="offers-list-desc">IE | 750 ml</p>
+              <p class="offers-list-price">$26</p>
+            </li>
+          </ul>
+          <h3 class="offers-lead">Cocktails</h3>
+          <ul class="offers-list">
+            <li class="offers-item">
+              <h4 class="offers-list-subtitle">Aperol Spritz</h4>
+              <p class="offers-list-desc">
+                Aperol | Villa Marchesi prosecco | soda | 30ml
+              </p>
+              <p class="offers-list-price">$20</p>
+            </li>
+            <li class="offers-item">
+              <h4 class="offers-list-subtitle">Dark 'N' Stormy</h4>
+              <p class="offers-list-desc">
+                Dark rum | Ginger beer | Slice of lime.
+              </p>
+              <p class="offers-list-price">$16</p>
+            </li>
+            <li class="offers-item">
+              <h4 class="offers-list-subtitle">Daiquiri</h4>
+              <p class="offers-list-desc">Rum | Citrus juice | Sugar</p>
+              <p class="offers-list-price">$10</p>
+            </li>
+            <li class="offers-item">
+              <h4 class="offers-list-subtitle">Old Fashioned</h4>
+              <p class="offers-list-desc">
+                Bourbon | Brown sugar | Angostura Bitters
+              </p>
+              <p class="offers-list-price">$31</p>
+            </li>
+            <li class="offers-item">
+              <h4 class="offers-list-subtitle">Negroni</h4>
+              <p class="offers-list-desc">
+                Gin | Sweet Vermouth | Campari | Orange garnish
+              </p>
+              <p class="offers-list-price">$26</p>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="believe">
+        <div class="container believe-container">
+          <article class="believe-article">
+            <img
+              src="./images/first-page/photos/chef.jpg"
+              alt="Chef"
+              class=""
+            />
+            <div class="believe-wrapper">
+              <p class="believe-subtitle">Chef's Word</p>
+              <h2 class="believe-title">What We Believe In</h2>
+              <p class="believe-text">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit auctor
+                sit .auctor sit iaculis in arcu. Vulputate nulla lobortis mauris
+                eget sit. Nulla scelerisque scelerisque congue ac consequat,
+                aliquam molestie lectus eu. Congue iaculis integer curabitur
+                semper sit nunc.
+              </p>
+              <h3 class="believe-name">Kevin Luo</h3>
+              <p class="believe-job">Chef & Founder</p>
+              <p class="believe-signature">Kevin Luo</p>
+            </div>
+          </article>
+        </div>
+      </section>
+      <section class="customers">
+        <div class="container">
+          <p class="customers-subtitle">Testimony</p>
+          <h2 class="customers-title">Happpy Customers</h2>
+          <ul class="customers-list">
+            <li class="customers-item">
+              <img
+                src="./images/first-page/photos/customer1.jpg"
+                alt="first-customer"
+                class="customers-img"
+              />
+              <div class="customers-wrapper">
+                <p class="customers-text">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing sit. auctor
+                  sit iaculis in arcu. Vulputate nulla lobortis mauris eget sit.
+                  Nulla scelerisque scelerisque congue.
+                </p>
+                <p class="customers-name">Wade Warren</p>
+                <p class="customers-job">Sommelier</p>
+              </div>
+            </li>
+            <li class="customers-item">
+              <img
+                src="./images/first-page/photos/customer2.jpg"
+                alt="second-customer"
+                class="customers-img"
+              />\
+              <div class="customers-wrapper">
+                <p class="customers-text">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing sit. auctor
+                  sit iaculis in arcu. Vulputate nulla lobortis mauris eget sit.
+                  Nulla scelerisque scelerisque congue.
+                </p>
+                <p class="customers-name">Jane Cooper</p>
+                <p class="customers-job">Chef</p>
+              </div>
+            </li>
+            <li class="customers-item">
+              <img
+                src="./images/first-page/photos/customer3.jpg"
+                alt="third-customer"
+                class="customers-img"
+              />
+              <div class="customers-wrapper">
+                <p class="customers-text">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing sit. auctor
+                  sit iaculis in arcu. Vulputate nulla lobortis mauris eget sit.
+                  Nulla scelerisque scelerisque congue.
+                </p>
+                <p class="customers-name">Robert Fox</p>
+                <p class="customers-job">Chef</p>
+              </div>
+            </li>
+            <li class="customers-item">
+              <img
+                src="./images/first-page/photos/customer4.jpg"
+                alt="fourth-customer"
+                class="customers-img"
+              />
+              <div class="customers-wrapper">
+                <p class="customers-text">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing sit. auctor
+                  sit iaculis in arcu. Vulputate nulla lobortis mauris eget sit.
+                  Nulla scelerisque scelerisque congue.
+                </p>
+                <p class="customers-name">Brooklyn Simmons</p>
+                <p class="customers-job">Caterer</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="video">
+        <div class="container video-container">
+          <div class="video-box"></div>
+        </div>
+      </section>
+      <section class="laurels">
+        <div class="container laurels-container">
+          <p class="laurels-subtitle">Awards & recognition</p>
+          <h2 class="laurels-title">Our Laurels</h2>
+          <ul class="laurels-list">
+            <li class="laurels-item">
+              <h3 class="laurels-item-title">Bib Gourmond</h3>
+              <p class="laurels-item-desc">
+                Lorem ipsum dolor sit amet, consectetur.
+              </p>
+            </li>
+            <li class="laurels-item">
+              <h3 class="laurels-item-title">Rising Star</h3>
+              <p class="laurels-item-desc">
+                Lorem ipsum dolor sit amet, consectetur.
+              </p>
+            </li>
+            <li class="laurels-item">
+              <h3 class="laurels-item-title">AA Hospitality</h3>
+              <p class="laurels-item-desc">
+                Lorem ipsum dolor sit amet, consectetur.
+              </p>
+            </li>
+            <li class="laurels-item">
+              <h3 class="laurels-item-title">Outstanding Chef</h3>
+              <p class="laurels-item-desc">
+                Lorem ipsum dolor sit amet, consectetur.
+              </p>
+            </li>
+          </ul>
         </div>
       </section>
       <section class="updates">
@@ -186,21 +444,6 @@ i<!DOCTYPE html>
             </li>
           </ul>
           <button class="updates-button">View More</button>
-        </div>
-      </section>
-      <section class="menu">
-        <div class="container">
-          <ul class="menu-list">
-            <li class="menu-item">
-              <a href="bar.html" class="menu-link"> Bar Menu </a>
-            </li>
-            <li class="menu-item">
-              <a href="#" class="menu-link"> Food Menu </a>
-            </li>
-            <li class="menu-item">
-              <a href="#" class="menu-link"> Desserts Menu </a>
-            </li>
-          </ul>
         </div>
       </section>
       <section class="newsletter">
