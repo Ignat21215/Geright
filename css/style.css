@@ -43,57 +43,78 @@ body {
 .header {
     padding-top: 32px;
     padding-bottom: 32px;
-    background-color: var(--btn-second-txt-сolor);
+    background-color: var(--btn-second-txt-СЃolor);
 }
 
 .header-link {
     color: var(--txt-color);
+    text-decoration: none;
     font-size: 16px;
     font-weight: 400;
+    line-height: 1.75px;
+    letter-spacing: 4%;
     font-family: var(--second-family);
 }
 
-.header-reference {
+.header_roster-link {
     font-family: var(--second-family);
     font-weight: 600;
     font-size: 16px;
-    letter-spacing: var(--letter-spacing-third);
+    line-height: 1.75;
+    letter-spacing: 5%;
+    text-decoration: none;
     color: var(--txt-color);
 }
 
 .header-logo {
     color: var(--txt-color);
+    text-decoration: none;
     font-family: var(--font-family);
     text-transform: uppercase;
     font-size: 44px;
     font-weight: 700;
-    line-height: var(--line-height-smaller);
+    line-height: 1.3px;
+    letter-spacing: 4%;
 }
+
 
 .header-container {
     display: flex;
     align-items: center;
+    justify-content: space-between;
+    gap: 437px;
 }
 
 .header-list {
     display: flex;
     gap: 32px;
-    padding-left: 437px;
-    padding-right: 271px;
+    align-items: center;
 }
 
-.header-roster {
+.header-wrapper {
     display: flex;
+    width: 100%;
+    justify-content: space-between;
 }
 
-.header-element:nth-child(1) {
-    padding-right: 50px;
-    border-right: 1px solid;
+.header_roster-list {
+    display: flex;
+    align-items: center;
 }
 
-.header-element:nth-child(2) {
-    padding-left: 50px;
-    border-right: 1px solid;
+.header_roster-item {
+    display: flex;
+    align-items: center;
+}
+
+.header_roster-item:nth-child(1)::after {
+    content: "";
+    background-image: radial-gradient(rgba(255, 255, 255, 1), rgba(255, 255, 255, 0));
+    width: 1px;
+    height: 57px;
+    display: inline-block;
+    margin-right: 50px;
+    margin-left: 50px;
 }
 
 .hero {
@@ -191,8 +212,6 @@ body {
     font-family: inherit;
 }
 
-/* ТУТ НЕ ЗАВЕРШЕНО */
-
 .about {
     background-image: linear-gradient(to right,
             rgba(4, 4, 4, 0.5),
@@ -203,7 +222,7 @@ body {
     background-repeat: no-repeat;
 }
 
-.about-box {
+.about-container {
     display: flex;
     padding-top: 120px;
     padding-bottom: 136px;
@@ -255,9 +274,19 @@ body {
     font-weight: 700;
 }
 
+.about-wrapper {
+    text-align: left;
+}
+
 .about-wrapper:first-of-type {
-    padding-right: 74px;
-    text-align: right
+    text-align: right;
+}
+
+.about-img {
+    height: 703px;
+    width: 84px;
+    padding-left: 74px;
+    padding-right: 96px;
 }
 
 .second-wrapper {
@@ -375,7 +404,14 @@ body {
 .believe {
     padding-top: 128px;
     padding-bottom: 128px;
-    background-image: url(./images/first-page/backgrounds/about_us-bg.jpg);
+    background-image: url(../images/first-page/backgrounds/about_us-bg.jpg);
+}
+
+.believe-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 96px;
+    justify-content: center;
 }
 
 .believe-subtitle {
@@ -388,7 +424,7 @@ body {
 
 .believe-subtitle::after {
     content: '';
-    background-image: url(../images/first-page/icons/right-spoon.jpg);
+    background-image: url(../images/first-page/icons/right-spoon.png);
     background-repeat: no-repeat;
     display: block;
     height: 9px;
@@ -439,12 +475,6 @@ body {
     color: var(--main-second-color);
 }
 
-.believe-article {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 96px;
-    justify-content: center;
-}
 
 .believe-wrapper {
     width: 570px;
@@ -460,7 +490,17 @@ body {
     padding-bottom: 64px;
 }
 
-/* CUSTOMERS */
+.believe-text::before {
+    content: "";
+    background-image: url(../images/first-page/icons/quote.png);
+    display: inline-block;
+    background-size: 40px;
+    width: 47px;
+    height: 40px;
+    background-repeat: no-repeat;
+    background-position: left;
+    margin-top: 5px
+}
 
 .customers {
     background-color: var(--btn-second-txt-сolor);
@@ -474,7 +514,7 @@ body {
     font-weight: 600px;
     font-size: 64px;
     letter-spacing: var(--letter-spacing-second);
-    color: var(--main-color);
+    color: var(--main-txt);
     padding-bottom: 64px;
     padding-top: 8px;
 }
@@ -484,13 +524,13 @@ body {
     font-family: var(--font-family);
     font-weight: 700px;
     font-size: 23px;
-    color: var(--text-color);
+    color: var(--txt-color);
     padding-bottom: 8px;
 }
 
 .customers-subtitle::after {
     content: '';
-    background-image: url(../images/first-page/icons/right-spoon.jpg);
+    background-image: url(../images/first-page/icons/right-spoon.png);
     background-repeat: no-repeat;
     display: block;
     height: 9px;
@@ -520,7 +560,7 @@ body {
     font-family: var(--font-family);
     font-weight: 400;
     font-size: 32px;
-    color: var(--main-second-color);
+    color: var(--main-txt);
 }
 
 .customers-job {
