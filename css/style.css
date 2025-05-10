@@ -120,11 +120,33 @@ body {
 }
 
 .hero-aside {
+    padding-top: 64px;
+}
+
+.hero-aside-list {
+    display: flex;
+    gap: 8px;
+    justify-content: center;
+}
+
+.hero-aside-item {
     color: var(--input-border);
     font-size: 16px;
     font-weight: 600;
-    padding-top: 64px;
-    text-align: center;
+}
+
+.first-aside-item {
+    display: flex;
+    align-items: center;
+}
+
+.first-aside-item::after {
+    content: '';
+    background-color: var(--main-txt);
+    width: 16px;
+    margin-left: 8px;
+    height: 1px;
+    display: inline-block;
 }
 
 .hero-wrapper {
@@ -345,7 +367,7 @@ body {
     line-height: var(--line-height-smaller);
 }
 
-.menu-item-link:hover {
+.menu-link:hover {
     text-decoration: underline;
     text-decoration-color: var(--decor-color);
 }

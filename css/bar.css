@@ -123,13 +123,36 @@ body {
 }
 
 .hero-aside {
-    color: var(--input-border);
-    font-size: 16px;
-    font-weight: 600;
+    padding-bottom: 82px;
+    display: flex;
+    align-self: flex-end;
+}
+
+.hero-aside-list {
     writing-mode: sideways-rl;
     display: flex;
     align-self: flex-end;
-    padding-bottom: 82px;
+    gap: 8px;
+}
+
+.hero-aside-item {
+    color: var(--input-border);
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.first-aside-item {
+    display: flex;
+    align-items: center;
+}
+
+.first-aside-item::after {
+    content: '';
+    background-color: var(--main-txt);
+    height: 16px;
+    margin-top: 8px;
+    width: 1px;
+    display: inline-block;
 }
 
 .hero-title {
