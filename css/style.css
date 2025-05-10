@@ -737,7 +737,7 @@ body {
     margin-bottom: 24px;
 }
 
-.footer-adress-item-link {
+.footer-address-item-link {
     color: var(--main-second-color);
     font-family: var(--second-family);
     font-size: 16px;

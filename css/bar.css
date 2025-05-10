@@ -490,7 +490,7 @@ body {
 
 .newsletter-container {
     background-color: var(--main-bg);
-    border: 1px solid var(--main-txt);
+    border: 1px solid var(--main-second-color);
     background-color: var(--btn-txt);
     border: 1px solid var(--form-border-color);
     height: 100%;
@@ -538,6 +538,7 @@ body {
     line-height: 175%;
 }
 
+
 .newsletter-input {
     padding: 16px 519px 16px 19px;
     font-weight: 600;
@@ -577,17 +578,17 @@ body {
     gap: 126px;
 }
 
-.footer-adress {
+.footer-address {
     text-align: center;
 }
 
-.footer-adress-list {
+.footer-address-list {
     display: flex;
     flex-direction: column;
     gap: 8px;
 }
 
-.footer-adress-item-title {
+.footer-address-title {
     color: var(--input-border);
     font-size: 32px;
     font-weight: 400;
@@ -596,14 +597,15 @@ body {
     margin-bottom: 24px;
 }
 
-.footer-adress-item-desc {
+.footer-address-item-link {
     color: var(--main-second-color);
     font-family: var(--second-family);
     font-size: 16px;
     font-weight: 400;
+    text-decoration: none;
 }
 
-.footer-title {
+.footer-logo {
     color: var(--main-txt);
     text-align: center;
     font-size: 64px;
@@ -612,6 +614,8 @@ body {
     letter-spacing: var(--letter-spacing-second);
     text-transform: uppercase;
     margin-bottom: 32px;
+    text-decoration: none;
+    display: block;
 }
 
 .footer-desc {
@@ -651,13 +655,12 @@ body {
     gap: 8px;
 }
 
-.footer-item-title {
+.footer-list-title {
     color: var(--input-border);
     font-size: 32px;
     font-weight: 400;
     line-height: var(--line-height-smaller);
     letter-spacing: var(--letter-spacing-second);
-    padding-bottom: 16px;
 }
 
 .footer-item-desc {
@@ -676,7 +679,7 @@ body {
     font-weight: 400;
     line-height: var(--line-height-smaller);
     letter-spacing: var(--letter-spacing-second);
-    display: block !important;
+    display: block;
 }
 
 .footer-container {
@@ -690,4 +693,9 @@ body {
     gap: 229px;
     align-items: center;
     justify-content: center;
+}
+.footer-list-wrapper{
+     display:flex;
+     flex-direction: column;
+     gap: 24px;
 }
