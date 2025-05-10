@@ -517,6 +517,9 @@ body {
     width: 412px;
 }
 
+.updates-container{
+    width: 1300px;
+}
 .updates-subtitle {
     display: block;
     font-size: 23px;
@@ -575,7 +578,7 @@ body {
     border-color: var(--img-border);
 }
 
-.updates-article-title {
+.updates-main-text {
     font-weight: 400;
     font-size: 32px;
     color: var(--main-txt);
@@ -583,11 +586,11 @@ body {
     padding-bottom: 32px;
 }
 
-.updates-article-title:hover {
+.updates-main-text:hover {
     text-decoration: underline;
 }
 
-.updates-article-desc {
+.updates-desc {
     padding-left: 0;
     font-size: 16px;
     font-family: var(--second-family);
@@ -595,7 +598,7 @@ body {
     padding-bottom: 32px;
 }
 
-.updates-article-link {
+.updates-link {
     color: var(--main-txt);
     font-family: var(--font-family);
     line-height: 1.75;
@@ -616,7 +619,7 @@ body {
     margin-top: 64px;
 }
 
-.updates-aticle-img {
+.updates-img {
     border: 0.5px solid rgba(220, 202, 135, 0.2);
 }
 
