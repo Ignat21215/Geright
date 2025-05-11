@@ -19,34 +19,36 @@ i<!DOCTYPE html>
   <body>
     <header class="header">
       <div class="container header-container">
-        <a href="index.html" class="header-logo">
-          <p class="header-text">Gericht</p>
-        </a>
-        <ul class="header-list">
-          <li class="header-item">
-            <a href="index.html" class="header-link">Home</a>
-          </li>
-          <li class="header-item">
-            <a href="" class="header-link">Pages</a>
-          </li>
-          <li class="header-item">
-            <a href="" class="header-link">Contact Us</a>
-          </li>
-          <li class="header-item">
-            <a href="" class="header-link">Blog</a>
-          </li>
-          <li class="header-item">
-            <a href="" class="header-link">Landing</a>
-          </li>
-        </ul>
-        <ul class="header-roster">
-          <li class="header-element">
-            <a href="" class="header-reference">Login in / Registration</a>
-          </li>
-          <li class="header-element">
-            <a href="" class="header-reference">Book Table</a>
-          </li>
-        </ul>
+          <a href="index.html" class="header-logo">
+              <p class="header-text">Gericht</p>
+          </a>
+          <div class="header-wrapper">
+            <ul class="header-list">
+                <li class="header-item">
+                    <a href="index.html" class="header-link">Home</a>
+                </li>
+                <li class="header-item">
+                    <a href="" class="header-link">Pages</a>
+                </li>
+                <li class="header-item">
+                    <a href="" class="header-link">Contact Us</a>
+                </li>
+                <li class="header-item">
+                    <a href="" class="header-link">Blog</a>
+                </li>
+                <li class="header-item">
+                    <a href="" class="header-link">Landing</a>
+                </li>
+            </ul>
+            <ul class="header_roster-list"> 
+                <li class="header_roster-item">
+                  <a href="" class="header_roster-link">Login in / Registration</a>
+                </li>
+                <li class="header_roster-item">
+                  <a href="" class="header_roster-link">Book Table</a>
+                </li>
+            </ul>
+          </div>
       </div>
     </header>
     <main>
@@ -84,12 +86,9 @@ i<!DOCTYPE html>
         </div>
       </section>
       <section class="about">
-        <div class="container">
-          <div class="about-box">
-            <div class="about-wrapper first-wrapper">
-              <h2 class="about-wrapper-title about-wrapper-title_first">
-                About Us
-              </h2>
+        <div class="container about-container">
+            <div class="about-wrapper">
+              <h2 class="about-wrapper-title about-wrapper-title_first">About Us</h2>
               <p class="about-wrapper-desc">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quis
                 pharetra adipiscing ultrices vulputate posuere tristique. In sed
@@ -97,12 +96,8 @@ i<!DOCTYPE html>
               </p>
               <button type="button" class="about-wrapper-btn">Know More</button>
             </div>
-            <img
-              src="./images/first-page/icons/knife.jpg"
-              alt="Knife"
-              class="about-img"
-            />
-            <div class="about-wrapper second-wrapper">
+              <img src="./images/first-page/icons/knife.jpg" alt="Knife" class="about-img">
+            <div class="about-wrapper">
               <h2 class="about-wrapper-title">Our History</h2>
               <p class="about-wrapper-desc">
                 Adipiscing tempus ullamcorper lobortis odio tellus arcu
@@ -111,9 +106,8 @@ i<!DOCTYPE html>
               </p>
               <button type="button" class="about-wrapper-btn">Know More</button>
             </div>
-          </div>
         </div>
-      </section>
+        </section>
       <section class="table">
         <div class="container table-container">
           <p class="table-subtitle">Reservations</p>
