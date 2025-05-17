@@ -91,7 +91,7 @@ body {
     justify-content: space-between;
 }
 
-.header_roster-list {
+.header-roster {
     display: flex;
     align-items: center;
 }
@@ -393,7 +393,7 @@ body {
 
 .second-item {
     background-image: url(../images/second-page/photos/wine.jpg);
-    padding: 284px 187px 258px 158px;
+    padding: 284px 157px 258px 158px;
 }
 
 .second-item:hover {
