@@ -50,7 +50,7 @@ body {
     font-family: var(--second-family);
 }
 
-.header_roster-link {
+.header-reference {
     font-family: var(--second-family);
     font-weight: 600;
     font-size: 16px;
@@ -96,12 +96,12 @@ body {
     align-items: center;
 }
 
-.header_roster-item {
+.header-element {
     display: flex;
     align-items: center;
 }
 
-.header_roster-item:nth-child(1)::after {
+.header-element:nth-child(1)::after {
     content: "";
     background-image: radial-gradient(rgba(255, 255, 255, 1), rgba(255, 255, 255, 0));
     width: 1px;
