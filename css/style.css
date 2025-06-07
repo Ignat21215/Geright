@@ -310,10 +310,9 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-evenly;
     padding-top: 68px;
     padding-bottom: 68px;
-
+    width: 1364px;
 }
 
 .table-subtitle {
@@ -579,6 +578,9 @@ body {
     width: 412px;
 }
 
+.updates-container{
+    width: 1300px;
+}
 .updates-subtitle {
     display: block;
     font-size: 23px;
@@ -637,7 +639,7 @@ body {
     border-color: var(--img-border);
 }
 
-.updates-article-title {
+.updates-main-text {
     font-weight: 400;
     font-size: 32px;
     color: var(--main-txt);
@@ -645,11 +647,11 @@ body {
     padding-bottom: 32px;
 }
 
-.updates-article-title:hover {
+.updates-main-text:hover {
     text-decoration: underline;
 }
 
-.updates-article-desc {
+.updates-desc {
     padding-left: 0;
     font-size: 16px;
     font-family: var(--second-family);
@@ -657,7 +659,7 @@ body {
     padding-bottom: 32px;
 }
 
-.updates-article-link {
+.updates-link {
     color: var(--main-txt);
     font-family: var(--font-family);
     line-height: 1.75;
@@ -678,7 +680,7 @@ body {
     margin-top: 64px;
 }
 
-.updates-aticle-img {
+.updates-img {
     border: 0.5px solid rgba(220, 202, 135, 0.2);
 }
 
@@ -712,7 +714,6 @@ body {
 
 .newsletter-subtitle {
     font-weight: 700;
-    font-family: var(--font-family);
     font-size: 23px;
     letter-spacing: var(--letter-spacing-second);
     color: var(--txt-color);
@@ -774,20 +775,20 @@ body {
 .footer-wrapper {
     display: flex;
     align-items: center;
-    gap: 126px;
+    gap: 125px;
 }
 
-.footer-adress {
+.footer-address {
     text-align: center;
 }
 
-.footer-adress-list {
+.footer-address-list {
     display: flex;
     flex-direction: column;
     gap: 8px;
 }
 
-.footer-adress-item-title {
+.footer-address-title {
     color: var(--input-border);
     font-size: 32px;
     font-weight: 400;
@@ -796,14 +797,15 @@ body {
     margin-bottom: 24px;
 }
 
-.footer-adress-item-desc {
+.footer-address-item-link {
     color: var(--main-second-color);
     font-family: var(--second-family);
     font-size: 16px;
     font-weight: 400;
+    text-decoration: none;
 }
 
-.footer-title {
+.footer-logo {
     color: var(--main-txt);
     text-align: center;
     font-size: 64px;
@@ -812,6 +814,8 @@ body {
     letter-spacing: var(--letter-spacing-second);
     text-transform: uppercase;
     margin-bottom: 32px;
+    text-decoration: none;
+    display: block;
 }
 
 .footer-desc {
@@ -831,7 +835,6 @@ body {
     background-image: url(../images/first-page/icons/right-spoon.png);
     background-position: center;
     background-repeat: no-repeat;
-    width: 40px;
     height: 9px;
     margin: 16px auto;
     display: block;
@@ -851,13 +854,12 @@ body {
     gap: 8px;
 }
 
-.footer-item-title {
+.footer-list-title {
     color: var(--input-border);
     font-size: 32px;
     font-weight: 400;
     line-height: var(--line-height-smaller);
     letter-spacing: var(--letter-spacing-second);
-    padding-bottom: 16px;
 }
 
 .footer-item-desc {
@@ -866,6 +868,7 @@ body {
     font-size: 16px;
     font-weight: 400;
     line-height: var(--line-height-smaller);
+    gap: 8px;
 }
 
 .footer-copyright {
@@ -890,4 +893,9 @@ body {
     gap: 229px;
     align-items: center;
     justify-content: center;
+}
+.footer-list-wrapper{
+     display:flex;
+     flex-direction: column;
+     gap: 24px;
 }
