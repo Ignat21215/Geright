@@ -116,11 +116,19 @@ body {
             rgba(4, 4, 4, 0.5),
             rgba(4, 4, 4, 0.5)),
         url(../images/second-page/backgrounds/background-image.jpg);
-    padding-bottom: 138px;
+    padding-bottom: 424px;
+    padding-top: 319px;
+    position: relative;
 }
 
 .hero-container {
     display: flex;
+}
+
+.hero-img {
+    position: absolute;
+    left: 643px;
+    top: 0;
 }
 
 .hero-hashtag {
@@ -133,13 +141,18 @@ body {
     gap: 40px;
     writing-mode: sideways-lr;
     justify-content: flex-end;
-    padding-top: 56px;
+    position: absolute;
+    top: 56px;
+    left: 112px;
 }
 
 .hero-aside {
     padding-bottom: 82px;
     display: flex;
     align-self: flex-end;
+    position: absolute;
+    right: 106px;
+    bottom: 170px;
 }
 
 .hero-aside-list {
@@ -170,15 +183,13 @@ body {
 }
 
 .hero-title {
-    background: url(../images/second-page/photos/bar.jpg) center / 634px 840px no-repeat;
-    padding-top: 319px;
-    padding-bottom: 286px;
     color: var(--txt-color);
     line-height: var(--line-height-third);
     letter-spacing: var(--letter-spacing-third);
     font-size: 181px;
     text-align: center;
     margin: 0 auto;
+    z-index: 2;
 }
 
 
@@ -384,53 +395,30 @@ body {
 .poison-item {
     border: 1px solid;
     border-color: rgba(220, 202, 135, 0.505);
+    display: flex;
+    position: relative;
 }
 
 .poison-item-desc {
     font-weight: 600;
     font-size: 45px;
-    line-height: var(--line-height-third);
+    line-height: 58px;
     color: rgba(255, 255, 255, 0);
+    position: absolute;
+    padding-top: 284px;
+    padding-bottom: 258px;
+    padding-inline: 168px;
 }
 
-.poison-item-desc:hover {
+.poison-item:hover .poison-item-desc {
     color: var(--txt-color);
-}
-
-.first-item {
-    background-image: url(../images/second-page/photos/beer.jpg);
-    padding: 284px 175px 258px 153px;
-}
-
-.first-item:hover {
-    background:
-        linear-gradient(to top, rgba(12, 12, 12, 0.5),
-            rgba(12, 12, 12, 0.5)),
-        url(../images/second-page/photos/beer.jpg);
-}
-
-.second-item {
-    background-image: url(../images/second-page/photos/wine.jpg);
-    padding: 284px 157px 258px 158px;
-}
-
-.second-item:hover {
-    background:
-        linear-gradient(to top, rgba(12, 12, 12, 0.5),
-            rgba(12, 12, 12, 0.5)),
-        url(../images/second-page/photos/wine.jpg);
+    background-image:
+        linear-gradient(to left, rgba(12, 12, 12, 0.5), rgba(12, 12, 12, 0.5));
 }
 
 .third-item {
-    background-image: url(../images/second-page/photos/alcohol.jpg);
-    padding: 271px 119px 271px 120px;
-}
-
-.third-item:hover {
-    background:
-        linear-gradient(to top, rgba(12, 12, 12, 0.5),
-            rgba(12, 12, 12, 0.5)),
-        url(../images/second-page/photos/alcohol.jpg);
+    padding-inline: 130px;
+    padding-block: 271px;
 }
 
 .hours {

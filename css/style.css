@@ -119,6 +119,7 @@ body {
 
 .hero {
     padding-bottom: 145px;
+    position: relative;
 }
 
 .hero-top-container {
@@ -170,13 +171,31 @@ body {
     display: inline-block;
 }
 
-.hero-container {
-    position: relative;
-}
-
 .hero-wrapper {
     width: 453px;
     margin-right: 180px;
+}
+
+.hero-scroll {
+    position: absolute;
+    right: 115px;
+    bottom: 147px;
+    font-size: 16px;
+    line-height: 1.75;
+    text-transform: uppercase;
+    color: var(--main-txt);
+    font-weight: 700;
+    display: flex;
+    gap: 24px;
+    flex-direction: column;
+}
+
+.hero-scroll::before {
+    content: '';
+    height: 61px;
+    width: 1px;
+    background-image: linear-gradient(to top, rgba(220, 202, 135, 0.24), var(--main-txt));
+    margin: 0 auto;
 }
 
 .hero-subtitle {
@@ -205,6 +224,10 @@ body {
     color: var(--main-second-color);
     font-family: var(--second-family);
     margin: 32px 0px;
+}
+
+.hero-top-container {
+    position: relative;
 }
 
 .hero-btn {
@@ -392,16 +415,20 @@ body {
 
 .menu {
     background-image: url(../images/first-page/backgrounds/beer-bg.jpg);
-    padding-top: 261px;
+    padding-top: 1px;
     padding-bottom: 262px;
     padding-left: 145px;
-    position: relative;
+}
+
+.menu-container {
+    display: flex;
+    gap: 146px;
+    flex-direction: column;
 }
 
 .menu-logo {
-    position: absolute;
-    left: 145px;
-    top: 1px;
+    height: 146px;
+    width: 146px;
 }
 
 .menu-list {
