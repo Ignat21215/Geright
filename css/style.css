@@ -138,7 +138,9 @@ body {
     display: flex;
     gap: 40px;
     writing-mode: sideways-lr;
-    margin-right: 158px;
+    position: absolute;
+    top: 288px;
+    left: 120px;
 }
 
 .hero-aside {
@@ -224,10 +226,6 @@ body {
     color: var(--main-second-color);
     font-family: var(--second-family);
     margin: 32px 0px;
-}
-
-.hero-top-container {
-    position: relative;
 }
 
 .hero-btn {
@@ -415,20 +413,19 @@ body {
 
 .menu {
     background-image: url(../images/first-page/backgrounds/beer-bg.jpg);
-    padding-top: 1px;
+    padding-top: 293px;
     padding-bottom: 262px;
     padding-left: 145px;
-}
-
-.menu-container {
-    display: flex;
-    gap: 146px;
-    flex-direction: column;
+    position: relative;
 }
 
 .menu-logo {
     height: 146px;
     width: 146px;
+    position: absolute;
+    top: 1px;
+    left: 145px;
+    z-index: 2;
 }
 
 .menu-list {

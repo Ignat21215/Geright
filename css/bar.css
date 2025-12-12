@@ -116,8 +116,7 @@ body {
             rgba(4, 4, 4, 0.5),
             rgba(4, 4, 4, 0.5)),
         url(../images/second-page/backgrounds/background-image.jpg);
-    padding-bottom: 424px;
-    padding-top: 319px;
+    padding-bottom: 138px;
     position: relative;
 }
 
@@ -126,9 +125,7 @@ body {
 }
 
 .hero-img {
-    position: absolute;
-    left: 643px;
-    top: 0;
+    margin: 0 auto;
 }
 
 .hero-hashtag {
@@ -187,9 +184,9 @@ body {
     line-height: var(--line-height-third);
     letter-spacing: var(--letter-spacing-third);
     font-size: 181px;
-    text-align: center;
-    margin: 0 auto;
-    z-index: 2;
+    position: absolute;
+    top: 319px;
+    left: 426px;
 }
 
 
@@ -293,7 +290,7 @@ body {
     width: 146px;
     height: 146px;
     left: 106px;
-    bottom: 945px;
+    top: 0;
 }
 
 .about-container {
@@ -405,15 +402,28 @@ body {
     line-height: 58px;
     color: rgba(255, 255, 255, 0);
     position: absolute;
-    padding-top: 284px;
-    padding-bottom: 258px;
-    padding-inline: 168px;
+    top: 50%;
+    left: 40%;
+}
+
+.poison-item-desc-third {
+    left: 35%;
 }
 
 .poison-item:hover .poison-item-desc {
     color: var(--txt-color);
-    background-image:
-        linear-gradient(to left, rgba(12, 12, 12, 0.5), rgba(12, 12, 12, 0.5));
+}
+
+.poison-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 412px;
+    height: 600px;
+}
+
+.poison-item:hover .poison-overlay {
+    background-image: linear-gradient(to top, rgba(12, 12, 12, 0.5), rgba(12, 12, 12, 0.5));
 }
 
 .third-item {
